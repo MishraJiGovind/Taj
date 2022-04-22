@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/MishraJiGovind/Taj/static/css/main.073c9b0a.css",
+    "main.js": "/MishraJiGovind/Taj/static/js/main.69df9d24.js",
+    "static/js/787.853fc916.chunk.js": "/MishraJiGovind/Taj/static/js/787.853fc916.chunk.js",
+    "index.html": "/MishraJiGovind/Taj/index.html",
+    "main.073c9b0a.css.map": "/MishraJiGovind/Taj/static/css/main.073c9b0a.css.map",
+    "main.69df9d24.js.map": "/MishraJiGovind/Taj/static/js/main.69df9d24.js.map",
+    "787.853fc916.chunk.js.map": "/MishraJiGovind/Taj/static/js/787.853fc916.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.69df9d24.js"
+  ]
+}
