@@ -45567,46 +45567,196 @@ justify-content: space-between;}
 
     /* collections css */
     .collections-main{
-        width: 100%;
+        width: 100vw;
+        height: auto;
         display: flex;
         align-items: center;
         justify-content: center;
     }
     .collections-main-sub{
-        width: 70%;
+        width: auto;
+        min-width: 70%;
+        padding: 1vw;
     
     }
     .collections-parrent{
         display: grid;
+        height: auto;
         grid-template-columns: auto auto auto auto;
     }
     .collections-card{
         width: auto;
-        border-radius: 0.8vw;
-        border: 0.1vw solid black;
+        height: auto;
+        max-height: 100vw;
+        border-radius: 0.5vw;
+        /* border: 0.1vw solid black; */
+        outline: 0.1vw solid black;
+       
     }
-    .collection-card:hover{
-        box-shadow:  10px 10px 8px 10px black;
+    .collections-card:hover{
+        box-shadow:  5px 5px 15px 1px rgba(0, 0, 0, .5);
         cursor: pointer;
-        transition: all 0.4s ease-in-out;
+        transition: all 0.1s ease-in-out;
+        
     }
     .collections-img{
         width: 100%;
         height: 80%;
-        border-radius: 0.8vw 0.8vw 0vw 0vw;
+        max-width: 100%;
+        border-radius: 0.5vw 0.5vw 0vw 0vw;
     }
     .collections-titles{
         width: 100%;
-        height: 20%;
+        height: 10vh;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: center;
     }
-    .collection-head{
-        font-size: 5px
-
-    };
-    .collection-body{
-
+    .collections-head{
+        margin: 0vw;
+        padding: 0vw;
+        margin-left: 1vw;
+        font-size: 20px;
     }
+    .collections-body{
+        margin: 0vw;
+        padding: 0vw;
+        margin-left: 1vw;
+        font-size: 15px;
+        color: grey;
+    }
+
+    @media (max-width: 1024px)
+{
+    .collections-main-sub{
+        width: auto;
+        min-width: 100%;
+        padding: 1vw;
+    
+    }
+    .collections-parrent{
+        display: grid;
+        height: auto;
+        grid-template-columns: auto auto;
+    }
+}
+.under-line{
+    position: relative;
+}
+.under-line::before{content: "";
+    display: inline-block;
+    width: 92px;
+    height: 1px;
+    background: linear-gradient(to right, rgb(153,102,61), rgb(200,170,40) 76%, rgb(255, 255, 255) 76%, rgb(255, 255, 255) 86%, rgb(200,170,40) 86%, rgb(200,170,40) 100%);
+    position: absolute;
+    bottom: -14px;
+    left: 0px;
+}
+
+/* Apointments css */
+.video-main{
+    width: 100vw;
+    height: auto;
+}
+.video-sec{
+    width: 100vw;
+    height: 70vh;
+}
+.videoTag{
+    width: 100%;
+    height: 70vh;
+    max-width: 100%;
+    position: absolute;
+}
+.video-sec-main{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .5);
+}
+.video-sec-main h1{
+    font-size: 50px;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.video-sec-main h5{
+    font-size: 15px;
+    color: white;
+}
+.video-play-button{
+    width: 3vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 1vw;
+    cursor: pointer;
+}
+.video-pin-code-main{
+    width: auto;
+    height: 5vh;
+    outline: 1px solid white;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.video-pin-code-main img{
+    width: 1vw;
+    margin: 0vw;
+    padding: 0vw;
+    background-color: none;
+    border-radius: none;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#video-pin-code{
+    outline: none;
+    background: none;
+    color: white;
+    border: none;
+    height: 100%;
+    width: 100%;
+
+}
+#video-pin-code::placeholder{
+    color: white;
+}
+.video-pin-code-main button{
+    height: 100%;
+    width: 150px;
+    border: none;
+    background: linear-gradient(to right, rgb(153,102,61), rgb(200,170,40));
+    color: white;
+}
+.video-img-sec{
+    width: auto;
+    max-width: 70%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+.img-sec-one{
+    width: auto;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    background-color: #FAECE9;
+}
+.img-sec-one h1{
+    margin: 0px;
+    padding: 0px;
+}
